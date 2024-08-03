@@ -1,4 +1,4 @@
-
+﻿
 <html>
 
 <head>
@@ -26,11 +26,12 @@
         </div>
         <div class="content">
             <iframe id="ifr1" frameborder="0" width="100%" height="615px"></iframe>
+            <iframe id="ifr2" frameborder="0" width="0" height="0"></iframe>
             <aside>
                 <p>复制以上内容到HOSTS文件即可！</p>
                 <p>参考文章：<a href="https://51.ruyo.net/988.html" target="_blank">Windows，Linux，Mac，Android，iPhone 如何修改hosts</a></p>
             </aside>
-            
+           
         </div>
         <div class="footer">
             <div class="legal pure-g">
@@ -49,10 +50,11 @@
     </div>
 <script>
 window.onload = function(){
-    var url1 = "https://raw.hellogithub.com/hosts";
+    var url1 = "https://cdn.jsdelivr.net/gh/malaohu/GitHubHosts@main/hosts.txt";
+    var url2 = "https://purge.jsdelivr.net/gh/malaohu/GitHubHosts@main/hosts.txt";
     document.getElementById("ifr1").src = url1 + "?r=" + Math.random();
+    document.getElementById("ifr2").src = url2 + "?r=" + Math.random();
 }
-
 </script>
 </body>
 </html>
